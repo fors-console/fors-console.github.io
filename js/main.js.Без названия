@@ -1,0 +1,78 @@
+function user(){
+ 
+	this.Auth = function(){
+		$.ajax({
+			"url": "../../api/auth.php", 
+			"type": "POST", 
+			"dataType": "html",
+			"data": $("#auth").serialize(),  
+			"success": function(html) {
+				if(html == 'Успешно'){location.reload();}
+				$(".response").fadeOut();
+				$(".response").fadeIn().html(html); 
+			},
+		}); 
+	}
+	
+	this.Console = function(act){
+		switch(act){
+			case 'open':     
+			$( ".consolestart" ).dblclick(function() {
+				$('html').css('cursor', 'wait');
+				setTimeout(function() {
+					$('.console').show();
+					$('html').css('cursor', 'default');
+					$('.console p').remove();
+				}, 3000);
+			});
+
+			break;
+			case 'close':
+				$('.console').hide(); 
+			break;
+		}
+	}
+
+} 
+var User = new user(); 
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1J 1M=[[\'[3] 5 1Q 8 h b 6! [3] 5 [1P] 1G сказал [3] 5 1S 2c [/2b.25.2a.2e:1U]: §7Тебя забанил §27§7, на сервер можно зайти через: §2k §7минуты §21 §7секунд [3] 5 [Мирный]  22 Блин\',2],[\'[3] 23 §4Данного набора не существует.\',2],[\'[3] 5 Создаю пустой конфигурационный файл: /1Z/1Y/1T/u.1V\',2],[\'[3] 5 d e f u.g...  j a!\',2],[\'[11] u C 6 Сообщение дня\',2],[\'[12] p u, Z 1X.25.28.29\',2],[\'[3] 5 [2g] Игрок 2h ето последнй сет которй даю\',2],[\'[3] 5 Игрок 2i нет я не я не хозяин дома\',2],[\'[3] 5 Игрок 2f ламай\',2],[\'[3] 5 d e f H.g...  j a!\',2],[\'[11] H C 6 Сообщение дня\',2],[\'[12] p H, Z 37.1R.1B.1C\',2],[\'[Y] p V W X, 13: l.k\',2],[\'[3] 5 Игрок 1D :)\',2],[\'[3] 5 Игрок 1E  Ищу девушку со скапом лет 14-15 пишите свой скайп мне в лс\',2],[\'[3] 5 ? [L] [Мастер1AКлинка] [1z] |1v+| 1u ок\',2],[\'[3] 5 1c 6. 1d "s" r s.\',2],[\'[3] 5 [n] Игрок z еще ресы дофига\',2],[\'[3] 5 d e f 1w.g...  j a!\',2],[\'[Y] p V W X, 13: l.k\',2],[\'[3] 24.10 15:26:16 [3] 5 &#m; Команда /1F доступна с Хелпера\',2],[\'[3] 24.10 15:26:16 [3] 5 1N 8 h b 6!\',2],[\'[3] 5 Игрок 1O привет\',2],[\'[3] 5 1c 6. 1d "s" r s.\',2],[\'[3] 5 x 1i a\',2],[\'[3] 5 [Мирный]  |&#B;&#w;+| 1g 1n\',2],[\'[3] 5 Создатель 1o 1\',2],[\'[3] 5 d e f F.g...  j a!\',2],[\'[3] 5 1p 8 h b 6!\',2],[\'[3] 5 Игрок 1q спс\',2],[\'[3] 5 [Мирный] [Алегархи] Добряк 1r Ну а чё ещё?:D\',2],[\'[3] 5 F 8 h b 6!\',2],[\'[3] 5 [n] Игрок 1L забаниш за то што я тя недобавлю в рг?\',2],[\'[3] 5 [Мирный] [мастера] |Глав.Админ| 1H 1I добавти\',2],[\'[3] [Легенда] [2l] |Креатив| 2j я её одеть немогу даже\',2],[\'[3] 5 2u 8 h b 6!\',2],[\'[3] 5 33 C 6 Сообщение дня\',2],[\'[3] 5 [n] Игрок z еще ресы дофига\',2],[\'[3] 5 [v] d e f 31.g...  j a!\',2],[\'[3] 5 &#m; Убрать y в своем регионе /1s 36 [рег] y 39 \',2],[\'[3] 5 [5] p 2T 2Q!\',2],[\'[3] 5 A 8 9 6: /2Y\',2],[\'[3] 5 U[/2X.2W.2V.2R:2S] 18 19 2Z 30 1l 3a 38 ([35] -32.34, 2U.0, 2O.2v)\',2],[\'[3] [5] 2P q o: l.k\',2],[\'[3] 5 2w 8 h b 6!\',2],[\'[3] 5 P 8 9 6: /1f\',2],[\'[3] 5 &#2x; [G]   Игрок U есть скайп A\',2],[\'[3] 5 1a 8 9 6: /1f\',2],[\'[3] 5 [v] d e f 1a.g...  j a!\',2],[\'[3] 5 [v] x 17 a\',2],[\'[3] 5 A q o: l.k\',2],[\'[3] 5 [L] {Мастер}  |&#B;&#w;| 17 скажишь я тебя заблочю\',2],[\'[3] 5 [v] d e f 2s.g...  j a!\',2],[\'[3] 5 [b] 1k 18 19!\',2],[\'[3] 5 E 8 9 6: /2o 2p\',2],[\'[3] 5 M 8 9 6: /\',2],[\'[3] 5 1e 8 9 6: /2r y\',2],[\'[3] 5 &#m; Что-бы написать соклановцам поставьте % перед текстом\',2],[\'[3] 5 1e 8 9 6: /S 0\',2],[\'[3] 5 [N] P I T Q.0  r K R 20 J.\',2],[\'[3] 5 [N] 2A I T Q.0  r K R 20 J.\',2],[\'[3] 5 1j q o: l.k\',2],[\'[3] 5 &#m; §сСт.Модератор может выдавать креатив\',2],[\'[3] 5 M q o: l.k\',2],[\'[3] 5 O 8 9 6: /c\',2],[\'[3] 5 &#m; Продажа аккаунтов строго запрещена.\',2],[\'[3] 5 2C 8 9 6: /S 1\',2],[\'[3] 5 O 8 9 6: /2E\',2],[\'[3] 5 E 8 9 6: /2G\',2],[\'[3] 5 E q o: l.k\',2],[\'[3] 5 1t 8 9 6: /1K 2F\',2],[\'[3] 5 2D: 2B 2H 2I..\',2],[\'[3] 2N 2M.\',2],[\'[3] 5 &#m; Добавить друга в приват /1s 2L |2J| |2K|\',2],[\'[3] 5 1k 8 9 6: /2z\',2],[\'[3] 5 $2q добавлено 1j. Теперь у него: $2m\',2],[\'[3] 5 2n 8 h b 6!\',2],[\'[3] 5 [n] Игрок z еще ресы дофига\',2],[\'[3] 5 [n] 2t 8 9 6: /2y\',2],[\'[3] 5 [n] 1t 8 9 6: /t\',2],[\'[3] 5 x 1i a\',2],[\'[3] 5 [Мирный]  |&#B;&#w;+| 1g 1n\',2],[\'[3] 5 Создатель 1o 1\',2],[\'[3] 5 d e f F.g...  j a!\',2],[\'[3] 5 1p 8 h b 6!\',2],[\'[3] 5 Игрок 1q спс\',2],[\'[3] 5 [Мирный] [Алегархи] Добряк 1r Ну а чё ещё?:D\',2],],i=0,1m=$(\'#1y\'),1x=1m.2d(),1h=$(\'<1b 1l="1h">&1W;</1b>\');',62,197,'||1000|Server||INFO|command||issued|server|file|AuthMe||Unable|to|load|dat|an||Creating|quitting|disconnect|9993|MAN|connection|User|lost|for|help||miha|mcjobs|65328|Saving|pvp|Carlos4nima|LesyanXator_PRO|65331|ran||SomethingWild|Oxcorp||XXOS2566|just|minutes|being||lexa111|Pay|vanyukhinok|acouter|250|online|gm|got|Fuucky|persik31|has|disconnected|Disconnect|IP||Multicraft|Connect|reason|||48|xxoo|logged|in|456789|span|Unknown|Type|rtp33|menu|BA3EJlNHA|cursor|flew|Ee0neguy|weea|id|cons|cgc|pAnCaKe_ArMy|gleb2003728|McKayBoys|radek1999|rg|Fagg|enzol|SP|nikita011|consH|console|SADBOYS|_|176|227|Jeka86ru|Guron|vanish|King1986|willismaximus|WoLfMaN|var|seen|arimon1111|data|Axl130|863|Moderator|goldbox|115|Disconnecting|userdata|49199|yml|nbsp|78|Essentials|plugins||623|Alex1212345|WARNING||||6king1986|120|131|168|94|Kennedy19|outerHeight|208|auzt67|CLANES|tronix10|nagibatel_golov|DBAswag|62|MineCraft|41500|MacDark|repair|all|30000|warp|Ban2|Sanji|sanek500|5672054480488|candygirl2002|10084|jobss|mobs|RidikxX|Enabled|_Mr_Dimon_Mr_|CONSOLE|cprivate|nmanYT|donate|level|saving|region|nick|addmember|saved|World|2382|Genius|set|164|50231|groups|63|191|162|82|back|with|entity|MrMIStake|2068|Danya35|750852887463|world|flag||at|deny|318'.split('|'),0,{}))
+ 
+
+function addString() {
+    i = typeof data[i] != 'undefined' ? i : 0;
+    var p = $('<p />').appendTo(cons).append(cursor.removeClass('blink'));
+    if (cons[0].scrollHeight > consH) {
+        $('p:first-child', cons).remove();  
+    }
+    printer(data[i++]);
+    return false;
+}
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('c b(3){8(3==\'\'){$(\'<1 7="6: 5;">Введите комманду</1>\').4(2)}a{$(\'<1 7="6: 5;">Команда успешно выполнена!</1>\').4(2)}$(\'#f\').3(\'\');8(2[0].g>e){$(\'1:d-9\',2).h()}}',18,18,'|p|cons|val|appendTo|red|color|style|if|child|else|CommandAdd|function|first|consH|msg|scrollHeight|remove'.split('|'),0,{}))
+
+function printer(d) {
+    var l = d[0].length,
+        c = 0,
+        timer = setInterval(function () {
+            if (c > l) {
+                clearInterval(timer);
+                cursor.addClass('blink');
+                setTimeout(addString, d[1]);
+            }
+            cursor.before(d[0][c++]);
+        }, 0);
+    return false;
+}
+ $('input').keydown(function(e) {
+    if(e.keyCode === 13) {
+      CommandAdd($(this).val());
+    }
+  });
+
+
+addString();
+//document.ondragstart = test; document.onselectstart = test; document.oncontextmenu = test; function test() { return false; } document.oncontextmenu; function catchControlKeys(event){ var code=event.keyCode ? event.keyCode : event.which ? event.which : null; if (event.ctrlKey){ if (code == 117) return false; if (code == 85) return false; if (code == 99) return false; if (code == 67) return false;if (code == 97) return false; if (code == 65) return false; } } 
+
+ 
+
+

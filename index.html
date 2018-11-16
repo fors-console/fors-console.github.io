@@ -1,0 +1,33 @@
+<!DOCTYPE html
+<!-- saved from url=(0039)http://fawe-mc.ru/console/?act=console -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fors-Craft (Консоль)</title>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<script src="./js/jquery.min.js.Без названия"></script>
+<script src="./js/jquery-ui.min.js.Без названия"></script>
+<link rel="stylesheet" href="./css/main.css" media="screen" type="text/css">
+<link rel="stylesheet" href="./fonts/font-awesome.min.css">
+<script type="text/javascript">
+	$(function() {
+		$('.console').draggable();
+		$('.consolestart').draggable();
+	}); 
+ </script>
+</head>
+<body style=""> 
+<div class="main blur">  
+	<div class="console ui-draggable" style="position: relative;">
+		<div class="consoleClose" onclick="User.Console(&#39;close&#39;);"></div>   
+		<img src="./images/cmd.png">
+		<div id="console" class="offline"><p>[Server] INFO | Server saving...</p><p>[Server] INFO [Владелец]  |&amp;#65331;&amp;#65328;+| zimin привет всем</p><p>[Server] INFO | *MrCowbian всем бб 1</p><p>[Server] INFO | New player - glitchin...  Creating file!</p><p>[Server] INFO | gleb2003728 issued an - /l 123458</p><p>[Server] INFO | Игрок McKayBoys ban777 пж дай бога</p><p>[Server] INFO | Хелпер ban777 Бана захотел?:D</p><p>[Server] INFO | Игрок ban777 забанил игрока </p><p>[Server] INFO | [Разработчик] urrdu - зачем забанил?</p><p>[Server] INFO | ban 777 прости, я щас разбаню.....<span id="cursor" class="">&nbsp;</span></p></div> 
+		<div class="add">
+		<input type="text" value="У вас нет доступа! (Неверные данные)" onblur="" onfocus="" disabled=""> 
+		</div>
+	</div> 
+	<div class="consolestart ui-draggable" onclick="User.Console(&#39;open&#39;);"><span>Открыть консоль</span></div> 
+<div class="footer"><a href="http://fawe-mc.ru/console/?logout">Выйти</a></div>	
+</div>
+<script src="./js/main.js.Без названия"></script>  
+
+
+</body></html>
